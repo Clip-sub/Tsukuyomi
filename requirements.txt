@@ -1,3 +1,9 @@
 Flask==1.0.2
 Flask-Assets==0.12
+Flask-DebugToolbar==0.10.1
+Flask-Migrate==2.0.3
+flask-paginate==0.4.5
+Flask-Script==2.0.5
+Flask-SQLAlchemy==2.2
+Flask-WTF==0.14.2
 SQLAlchemy==1.2.11

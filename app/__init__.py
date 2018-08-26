@@ -7,6 +7,7 @@ from flask_assets import Bundle
 
 def create_app(config):
   app = flask.Flask(__name__)
+  app.debug = True
   app.config.from_object(config)
 
   app.config['SESSION_REFRESH_EACH_REQUEST'] = False
