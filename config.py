@@ -9,3 +9,7 @@ MAINTENANCE_MODE = False
 MAINTENANCE_MODE_MESSAGE = 'Site is currently in read-only maintenance mode.'
 # Allow logging in during maintenance (without updating last login date)
 MAINTENANCE_MODE_LOGINS = True
+
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+SQL_DATABASE_URI = ''
+DATABASE_CONNECT_OPTIONS = {}
