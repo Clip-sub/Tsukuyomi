@@ -13,3 +13,6 @@ MAINTENANCE_MODE_LOGINS = True
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 SQL_DATABASE_URI = ''
 DATABASE_CONNECT_OPTIONS = {}
+
+CSRF_ENABLED = True
+CSRF_SESSION_KEY = 'd731ad92-82ef-48f1-8844-ae935b2761d8'
