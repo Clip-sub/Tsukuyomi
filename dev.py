@@ -1,6 +1,7 @@
 import sys
 
 TEST_PATHS = ['tests']
+DATABASE_URI = 'mysql://username:password@server/db'
 
 def print_cmd(cmd, args):
   print('Running: {0}\n'.format(
