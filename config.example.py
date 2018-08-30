@@ -16,3 +16,8 @@ DATABASE_CONNECT_OPTIONS = {}
 
 CSRF_ENABLED = True
 CSRF_SESSION_KEY = 'd731ad92-82ef-48f1-8844-ae935b2761d8'
+
+# Use MySQL or Sqlite3 (mostly deprecated)
+USE_MYSQL = True
+
+ALLOW_PASSWORD_RESET = True
