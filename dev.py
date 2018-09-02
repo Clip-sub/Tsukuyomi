@@ -1,7 +1,11 @@
 import sys
+from flask import Flask, current_app as app
 
-TEST_PATHS = ['tests']
-DATABASE_URI = 'mysql://username:password@server/db'
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+  return 'Hello World!!!'
 
 def print_cmd(cmd, args):
   print('Running: {0}\n'.format(
@@ -9,4 +13,5 @@ def print_cmd(cmd, args):
   sys.stdout.flush()
 
 if __name__ == '__main__':
+  app.run()
   assert sys.version_info >= (3, 6), "Python 3.6 or above is required"
