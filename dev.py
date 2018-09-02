@@ -13,5 +13,5 @@ def print_cmd(cmd, args):
   sys.stdout.flush()
 
 if __name__ == '__main__':
-  app.run()
+  # app.run()
   assert sys.version_info >= (3, 6), "Python 3.6 or above is required"
