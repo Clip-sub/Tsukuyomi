@@ -1,7 +1,11 @@
 import sys
-from flask import Flask, current_app as app
+from flask import Flask, config as app
+from flask_sqlalchemy import SQLAlchemy
+import config
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = config.SQLALCHEMY_DATABASE_URI
+db = SQLAlchemy(app)
 
 @app.route('/')
 def hello_world():
