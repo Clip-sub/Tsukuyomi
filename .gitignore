@@ -105,6 +105,10 @@ venv.bak/
 
 # vscode
 .vscode/
+.DS_Store
 
 # config
 config.py
+
+# Jetbrains
+.idea/
