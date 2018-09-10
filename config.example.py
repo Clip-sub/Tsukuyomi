@@ -24,6 +24,6 @@ USE_MYSQL = True
 ALLOW_PASSWORD_RESET = True
 
 if USE_MYSQL:
-  SQLALCHEMY_DATABASE_URI = ('mysql://test:test123@localhost/tsukuyomi?charset=utf8mb4')
+    SQLALCHEMY_DATABASE_URI = ('mysql://test:test123@localhost/tsukuyomi?charset=utf8mb4')
 else:
-  SQLALCHEMY_DATABASE_URI = ('sqlite:///' + os.path.join(BASE_DIR, 'test.db') + '?check_same_thread=False')
+    SQLALCHEMY_DATABASE_URI = ('sqlite:///' + os.path.join(BASE_DIR, 'test.db') + '?check_same_thread=False')
