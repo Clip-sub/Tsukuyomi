@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-source ./env/bin/activate
+export FLASK_APP=dev.py
+export FLASK_ENV=development
+flask run

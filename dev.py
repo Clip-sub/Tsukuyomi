@@ -10,9 +10,15 @@ app.config['SQLALCHEMY_DATABASE_URI'] = config.SQLALCHEMY_DATABASE_URI
 db = SQLAlchemy(app)
 
 
-@app.route('/')
+@app.route('/hello')
 def hello_world():
     return 'Hello World!!!'
+
+
+@app.route('/create_db')
+def init_db():
+    db.create_all()
+    return 'DB created'
 
 
 def print_help():
