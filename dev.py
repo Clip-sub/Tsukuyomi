@@ -4,6 +4,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
 import config
+from app.models import user
 
 # from app.models import User
 
@@ -13,12 +14,12 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 
-class User(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    email = db.Column(db.String(120), unique=True, nullable=False)
+# class User(db.Model):
+#     id = db.Column(db.Integer, primary_key=True)
+#     email = db.Column(db.String(120), unique=True, nullable=False)
 
-    def __repr__(self):
-        return '<User %r>' % self.email
+#     def __repr__(self):
+#         return '<User %r>' % self.email
 
 
 @app.route('/hello')
@@ -30,7 +31,7 @@ def hello_world():
 def init_db():
     db.create_all()
 
-    user1 = User(email='user1@yopmail.com')
+    user1 = user.User(email='user1@yopmail.com')
     db.session.add(user1)
     db.session.commit()
     return 'DB created'
