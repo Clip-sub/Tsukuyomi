@@ -23,7 +23,7 @@ def hello_world():
 def init_db():
     db.create_all()
 
-    user1 = User(email='user1@yopmail.com')
+    user1 = User(email='user2@yopmail.com')
     db.session.add(user1)
     db.session.commit()
     return 'DB created'
