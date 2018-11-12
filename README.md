@@ -26,3 +26,7 @@ Following sections show typical data schemes that I'm planning to build:
 - Title
 - Number
 - Upload Date
+
+## On Mac
+
+`brew services start mariadb`
